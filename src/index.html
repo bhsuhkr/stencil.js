@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+    />
+    <title>Stencil Component Starter</title>
+    <style>
+      html {
+        --color-primary: purple;
+        --color-primary-inverse: rgb(148, 104, 148);
+        --color-primary-highlight: rgb(250, 217, 222);
+      }
+    </style>
+    <script src="/build/mycomponent.js"></script>
+  </head>
+  <body>
+    <uc-stock-price stock-symbol="AAPL"></uc-stock-price>
+    <uc-stock-finder></uc-stock-finder>
+    <!-- <script>
+      const stockFindEl = document.querySelector('uc-stock-finder');
+      stockFindEl.addEventListener('ucSymbolSelected', event => {
+        console.log(event);
+      });
+    </script> -->
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+    />
+    <title>Stencil Component Starter</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      .side-nav ul {
+        list-style: none;
+      }
+
+      .side-nav li {
+        margin: 1rem 0;
+      }
+
+      .side-nav a {
+        text-decoration: none;
+        color: black;
+      }
+    </style>
+    <script src="/build/mycomponent.js"></script>
+  </head>
+  <body>
+    <button id="side-drawer-btn">Open Side Menu</button>
+    <p>Let's test this new <uc-tooltip text="this is the text">Tooltip!</uc-tooltip></p>
+    <uc-side-drawer title="Main Menu">
+      <nav class="side-nav">
+        <ul>
+          <li><a href="/">Link 1</a></li>
+          <li><a href="/">Link 2</a></li>
+          <li><a href="/">Link 3</a></li>
+        </ul>
+      </nav>
+    </uc-side-drawer>
+
+    <script>
+      const sideBtn = document.querySelector("#side-drawer-btn");
+      const sideDrawer = document.querySelector("uc-side-drawer");
+      sideBtn.addEventListener("click", () => {
+        if (!sideDrawer.opened) {
+          // sideDrawer.opened = true;
+          sideDrawer.open();
+        }
+      });
+
+      setTimeout(() => {
+        // sideDrawer.title = "It changed!";
+        sideDrawer.setAttribute("title", "It changed via Attribute");
+      }, 3000);
+    </script>
+  </body>
+</html> -->

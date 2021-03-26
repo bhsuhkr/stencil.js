@@ -1,0 +1,52 @@
+:host {
+    font-family: sans-serif;
+    border: 2px solid rgb(51, 2, 51);
+    margin: 2rem;
+    padding: 1rem;
+    display: block;
+    width: 20rem;
+    max-width: 100%;
+}
+
+:host(.error) {
+    border-color: red;
+    color: red;
+}
+
+form input {
+    font: inherit;
+    color: rgb(51, 2, 51);
+    padding: 0.1rem 0.25rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+form input:focus,
+form button:focus {
+    outline: none;
+}
+
+form button {
+    font: inherit;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid rgb(51, 2, 51);
+    background: rgb(51, 2, 51);
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover,
+form button:active {
+    background: rgb(94, 0, 94);
+    border-color: rgb(94, 0, 94);
+}
+
+form button:disabled {
+    background: #ccc;
+    border-color: #ccc;
+    color: white;
+    cursor: not-allowed;
+}
+
+
+
